@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(247, 250, 253);
+    /* filter: drop-shadow(5px 5px 10px black); */
+}
+#nav-bar{
+    width: 100%;
+    height: 50px;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 120px;
+}
+#nav-bar .left-nav{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#nav-bar .left-nav img{
+    width: 18%;
+}
+#nav-bar .left-nav h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+#nav-bar .right-nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.right-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+     gap: 40px;
+    font-weight: 400;
+}
+.right-nav a:hover{
+    color: rgb(37, 134, 134);
+}
+.right-nav button{
+    width: 130px;
+    height: 38px;
+    border: none;
+    background-color: rgb(37,137,134);
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    transform: .10s;
+}
+.right-nav button:hover{
+    background-color: rgb(56, 201, 201);
+    cursor: pointer;
+}
+.right-nav i{
+    display: none;
+}
+#hero{
+    background-image: url(./img/hero-bg-light.webp);
+    opacity: 80%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img-part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#img-part img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+#body-part{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    
+}
+#body-part h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #191919d9;
+}
+#body-part h1 span{
+    color: rgb(2, 92, 92);
+}
+#body-part h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: gray;
+}
+#body-part #btn button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    background-color: rgb(37,137,134);
+    color: white;
+    font-size: 18px;
+    border-radius: 35px;
+    margin-top: 30px;
+
+
+}
+#body-part #btn .first-btn:hover{
+    cursor: pointer;
+    background-color: rgb(2, 92, 92);
+}
+#body-part  #btn .video-btn{
+    color: rgb(22, 18, 18);
+    background: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.62);
+    width: 150px;
+    cursor: pointer;
+}
+#body-part #btn .video-btn:hover{
+    color: rgb(2, 92, 92);
+}
+#services{
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(128, 128, 128, 0.265); */
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+#services .ser-bax1{
+    width: 30%;
+    height: 120px;
+    /* background-color: rgb(44, 37, 29); */
+    display: flex;
+    /* box-shadow: 0 0 10px rgb(21, 90, 92); */
+    padding: 30px;
+    cursor: pointer;
+}
+#services .ser-bax1 i{
+    font-size: 90px;
+    font-weight: 100;
+    color: rgb(28, 83, 83);
+}
+#services .ser-bax1 span h1{
+    font-size: 24px;
+    color: rgba(92, 91, 91, 0.992);
+
+}
+#services .ser-bax1 span p{
+    font-size: 16px;
+    color: rgba(92, 91, 91, 0.739);
+    line-height: 20px;
+
+}
+#services .ser-bax1 :hover{
+   color: rgb(17, 118, 118);
+}
+#services .ser-bax1 p:hover{
+    color: rgb(0, 0, 0);
+ }
+#last-contact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-inline: 5px;
+    padding-block: 40px;
+    gap: 30px;
+}
+#last-contact #frist{ 
+    width: 20%;
+}
+#last-contact #frist h1{ 
+    font-size: 34px;
+    color: rgb(2, 61, 61);
+}
+#last-contact #frist h6{ 
+    font-size: 14px;
+    font-weight: 400;
+}
+#last-contact #second{ 
+    width: 15%;
+    padding-top: 20px;
+}
+#last-contact #second h1{ 
+    font-size: 20px;
+}
+#last-contact #second h6{ 
+    font-size: 14px;
+    font-weight: 400;
+}
+#last-contact #three{ 
+    width: 15%;
+    padding-top: 20px;
+}
+#last-contact #three h1{ 
+    font-size: 20px;
+}
+#last-contact #three h6{ 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#last-contact #four{ 
+    width: 30%;
+    padding-top: 20px;
+}
+#last-contact #four h1{ 
+    font-size: 20px;
+}
+#last-contact #four h6{ 
+    font-size: 12px;
+    font-weight: 400;
+}
+#four .input input{
+    width: 50%;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.563);
+    border-radius: 30px;
+    line-height: 10px;
+}
+#four .input button{
+    width: 30%;
+    height: 40px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.563);
+    border-radius: 30px;
+    line-height: 10px;
+    font-size: 14px;
+    background-color: rgb(6, 69, 69);
+    color: white;
+}
+#four .input button:hover{
+    background-color: rgb(17, 118, 118);
+}
+#erro{
+    width: 85%;
+    height: 1px;
+    background-color: rgba(102, 107, 105, 0.592);
+    padding-inline: 20px;
+    margin-left: 100px;
+}
+#copy-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 30px;
+}
+#copy-right h1{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#copy-right h1 span{
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(1, 40, 40);
+}
+#copy-right h2{
+    font-size: 14px;
+}
+@media (max-width:1200px) {
+    .right-nav a{
+        display: none;
+    }
+    #last-contact{
+        display: none;
+    }
+    #erro{
+        display: none;
+    }
+    #copy-right{
+        width: 100%;
+        height: auto;
+        display: flexP;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+@media (max-width:600px) {
+    #main-container{
+        width: 100%;
+        height: auto;
+        /* background-color: rebeccapurple; */
+    }
+    #nav-bar{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+    }
+    .right-nav a{
+        display: none;
+    }
+    #nav-bar .left-nav img{
+        width: 14%;
+    }
+    #nav-bar .left-nav h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #img-part img{
+        width: 70%;
+        height: auto;
+    }
+    .right-nav button{
+        width: 90px;
+        height: 30px;
+        border: none;
+        background-color: rgb(37,137,134);
+        color: white;
+        font-size: 12px;
+        border-radius: 30px;
+        transform: .10s;
+    }
+    .right-nav i{
+        display: inline;
+    }
+    #hero{
+        background-image: url(./img/hero-bg-light.webp);
+        width: 100%;
+       
+    }
+    #body-part h1{
+        font-size: 4vw;
+        margin-top: 30px;
+    }
+    #body-part h2{
+        font-size: 2vw;
+    }
+    #body-part #btn button{
+        width: 90px;
+        height: 30px;
+        border: none;
+        background-color: rgb(37,137,134);
+        color: white;
+        font-size: 12px;
+        border-radius: 35px;
+    
+    }
+    #services{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    #services .ser-bax1{
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(44, 37, 29); */
+        display: flex;
+        /* box-shadow: 0 0 10px rgb(21, 90, 92); */
+        padding: 30px;
+        cursor: pointer;
+    }
+    #services .ser-bax1 i{
+        font-size: 50px;
+        font-weight: 100;
+        color: rgb(28, 83, 83);
+    }
+    #services .ser-bax1 span h1{
+        font-size: 16px;
+        color: rgba(92, 91, 91, 0.992);
+    
+    }
+    #services .ser-bax1 span p{
+        font-size: 12px;
+        color: rgba(92, 91, 91, 0.739);
+        line-height: 20px;
+    
+    }
+    #last-contact{
+        display: none;
+    }
+    #erro{
+        display: none;
+    }
+    #copy-right{
+        width: 100%;
+        height: auto;
+        display: flexP;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+}
+@media (max-width:480px) {
+    #main-container{
+        width: 100%;
+        height: auto;
+        /* background-color: rebeccapurple; */
+    }
+    #nav-bar{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+    }
+    .right-nav a{
+        display: none;
+    }
+    #nav-bar .left-nav img{
+        width: 14%;
+    }
+    #nav-bar .left-nav h1{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #img-part img{
+        width: 70%;
+        height: auto;
+    }
+    .right-nav button{
+        width: 90px;
+        height: 30px;
+        border: none;
+        background-color: rgb(37,137,134);
+        color: white;
+        font-size: 12px;
+        border-radius: 30px;
+        transform: .10s;
+    }
+    .right-nav i{
+        display: inline;
+    }
+    #hero{
+        background-image: url(./img/hero-bg-light.webp);
+        width: 100%;
+       
+    }
+    #body-part h1{
+        font-size: 4vw;
+        margin-top: 30px;
+    }
+    #body-part h2{
+        font-size: 2vw;
+    }
+    #body-part #btn button{
+        width: 90px;
+        height: 30px;
+        border: none;
+        background-color: rgb(37,137,134);
+        color: white;
+        font-size: 12px;
+        border-radius: 35px;
+    
+    }
+    #services{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    #services .ser-bax1{
+        width: 100%;
+        height: auto;
+        /* background-color: rgb(44, 37, 29); */
+        display: flex;
+        /* box-shadow: 0 0 10px rgb(21, 90, 92); */
+        padding: 30px;
+        cursor: pointer;
+    }
+    #services .ser-bax1 i{
+        font-size: 50px;
+        font-weight: 100;
+        color: rgb(28, 83, 83);
+    }
+    #services .ser-bax1 span h1{
+        font-size: 16px;
+        color: rgba(92, 91, 91, 0.992);
+    
+    }
+    #services .ser-bax1 span p{
+        font-size: 12px;
+        color: rgba(92, 91, 91, 0.739);
+        line-height: 20px;
+    
+    }
+    #last-contact{
+        display: none;
+    }
+    #erro{
+        display: none;
+    }
+  
+   
+}
+@media (max-width:1100x) {
+    #services{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    #nav-bar .right-nav i{
+        display: inline;
+    }
+  
+}
